@@ -2,7 +2,7 @@ package mate.academy
 
 const val ZERO = 0
 const val TWO = 2
-const val TWENTYFIVE = 2
+const val TWENTYFIVE = 25
 
 fun processAndFilterNumbers(numbers: List<Int>): List<Int> {
     val result = mutableListOf<Int>()
@@ -13,5 +13,5 @@ fun processAndFilterNumbers(numbers: List<Int>): List<Int> {
             result.add(it * TWO)
         }
     }
-    return result.filter { it > TWENTYFIVE }
+    return result.filter { it > TWENTYFIVE }.toList()
 }
